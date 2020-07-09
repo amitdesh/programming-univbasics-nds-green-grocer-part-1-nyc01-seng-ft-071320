@@ -14,6 +14,7 @@ end
 
 
 def consolidate_cart(cart)
+  filtered_array = []
   cart.each do |item|
     target_item = find_item_by_name_in_collection(item[:item], filtered_array)
     if target_item
